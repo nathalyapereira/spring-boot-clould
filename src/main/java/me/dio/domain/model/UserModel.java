@@ -27,7 +27,7 @@ public class UserModel {
     private CardModel card;
 
     @OneToMany(cascade= CascadeType.ALL, fetch = FetchType.EAGER)
-    private List<FeatureModel> feature;
+    private List<FeaturesModel> feature;
 
     @OneToMany(cascade= CascadeType.ALL, fetch = FetchType.EAGER)
     private List<NewsModel> news;
@@ -64,11 +64,11 @@ public class UserModel {
         this.card = card;
     }
 
-    public List<FeatureModel> getFeature() {
+    public List<FeaturesModel> getFeature() {
         return feature;
     }
 
-    public void setFeature(List<FeatureModel> feature) {
+    public void setFeature(List<FeaturesModel> feature) {
         this.feature = feature;
     }
 
