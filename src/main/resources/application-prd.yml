@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://postgres.railway.internal:46504/railway
-    username: postgres
-    password: bNDRftMPqdtnMZUBwBiGhDMgTfnkUaJI
+    url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
   jpa:
     open-in-view: false
     hibernate:
