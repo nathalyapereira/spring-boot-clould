@@ -26,10 +26,10 @@ public class UserModel {
     @OneToOne(cascade = CascadeType.ALL)
     private CardModel card;
 
-    @OneToMany(cascade= CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<FeaturesModel> feature;
 
-    @OneToMany(cascade= CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<NewsModel> news;
 
     public Long getId() {
